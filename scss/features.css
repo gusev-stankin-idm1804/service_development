@@ -1,0 +1,50 @@
+.features {
+  top: -425px;
+  left: 0;
+  position: relative;
+  min-height: 1308px;
+  margin-bottom: -425px;
+}
+
+.feaures__background {
+  position: absolute;
+  width: 100%;
+  min-height: 100%;
+  background: url(../img/shape_1_copy_814.png) no-repeat 0 0/cover;
+  opacity: 0.05;
+}
+
+.features .container {
+  padding-top: 585px;
+}
+
+.features__description {
+  margin-top: -12px;
+}
+
+.features__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.features__item {
+  margin-top: 76px;
+}
+
+.features__item .item__image {
+  width: 160px;
+  height: 160px;
+  background-color: #eff8ff;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+
+.features__item .item__image img {
+  position: relative;
+  top: 25%;
+  left: 25%;
+}
+/*# sourceMappingURL=features.css.map */

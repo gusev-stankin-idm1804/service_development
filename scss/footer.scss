@@ -1,0 +1,54 @@
+.footer {
+    min-height: 275px;
+    background: url('../img/shape_6_526.png') 0 0/100% 100% no-repeat;
+    background-size: cover;
+    color: #fff;
+}
+.footer_row {
+    display: flex;
+    padding-top: 175px;
+    align-items: center;
+    @include sm {
+        flex-direction: column;
+    } 
+}
+.footer__logo {
+    flex: 1 1 auto;
+}
+.footer__menu .menu__list {
+    @include sm {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        a {
+            
+        }
+    }
+    a {
+        color: #fff;        
+    }
+}
+.footer__mail {
+    padding-left: 272px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: #fff;
+    @include md {
+        padding-left: 50px;
+    }
+    @include sm {
+        padding-left: 0px;
+    }
+    &::before {
+        content: '';
+        display: inline-block;
+        position: relative;
+        top: 2px;
+        margin-right: 10px;
+        width: 17px;
+        height: 13px;
+        background: url('../img/icons/envelope_522.png');
+    }
+}

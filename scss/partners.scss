@@ -1,0 +1,57 @@
+.partners__title {
+    padding: 115px 0 80px 0;
+    @include xsm {
+        padding-top: 64px;
+    }
+}
+.partners__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.partners__logo {
+    flex: 0 0 20%;
+    position: relative;
+    margin: 0 20px 50px 20px;
+    @include sm {
+        flex: 0 0 40%;
+    }
+    @include xsm {
+        flex: 0 0 51%;
+        &:nth-child(2n) {
+            display: none;
+        }
+    }
+}
+.partners__logo div {
+    margin: 0 auto;
+    background-blend-mode: multiply;
+    opacity: 0.3;
+}
+
+.logo__google {
+    width: 200px;
+    height: 133px;
+    background: url('../img/partners/google.png') no-repeat;
+    background-color: #585858;
+}
+.logo__uber {
+    width: 188px;
+    height: 104px;
+    background: url('../img/partners/uber.png') no-repeat;
+    background-color: #585858;
+}
+.logo__dodo {
+    width: 208px;
+    height: 115px;
+    background: url('../img/partners/dodo.png') no-repeat;
+    background-color: #585858;;
+}
+.logo__samsung {
+    width: 170px;
+    height: 57px;
+    background: url('../img/partners/samsung.png') no-repeat;
+    background-color: #585858;;
+}

@@ -1,0 +1,64 @@
+.work {
+    min-height: 1475px;
+    background: url('../img/shape_5_349.png') 0 100px/100% 90% no-repeat, url('../img/shape_5_copy_382.png') no-repeat 0 0/cover;
+    @include md {
+        min-height: 1700px;
+        background: url('../img/shape_5_349.png') 0 0/100% 100% no-repeat, url('../img/shape_5_copy_382.png') no-repeat 0 -20px/cover;
+    }
+    @include sm {
+        background: linear-gradient(90.0deg, #4194fc 0%, #0bded3 100%);
+        min-height: 0;
+    }
+}
+.work__title {
+    padding-top: 300px;
+    color: #fff;
+    @include md {
+        padding-top: 200px;
+    }
+    @include md {
+        padding-top: 150px;
+    }
+    @include sm {
+        padding-top: 64px;
+    }
+}
+
+.work__description {
+    margin: -10px 0 16px 0;
+    color: #c5edff;
+    @include xsm {
+        color: rgb(255, 255, 255);
+        margin: 0;
+    }
+}
+.work__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    @include sm {
+        padding-bottom: 40px;
+    }
+}
+.work__item {
+    flex: 0 1 280px;
+    display: flex;
+    flex-direction: column;
+    padding: 22px 55px;
+    &:nth-child(1), &:nth-child(4) {
+        padding-left: 0;
+    }
+    &:nth-child(3n) {
+        padding-right: 0;
+    }
+    .item__title {
+        margin-top: -35px;
+        color: #fff;
+    }
+    .item__description {
+        color: #c6edff;
+    }
+    @include lg {
+        padding: 16px !important;
+    }
+}

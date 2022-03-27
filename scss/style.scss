@@ -1,0 +1,116 @@
+@mixin lg {
+    @media (max-width: 1199.98px) {
+        @content;
+    }
+}
+@mixin md {
+    @media (max-width: 991.98px) {
+        @content;
+    }
+}
+@mixin sm {
+    @media (max-width: 767.98px) {
+        @content;
+    }
+}
+@mixin xsm {
+    @media (max-width: 575.98px) {
+        @content;
+    }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&display=swap');
+@import 'nullstyle.scss';
+@import 'header.scss';
+@import 'features.scss';
+@import 'info.scss';
+@import 'work.scss';
+@import 'partners.scss';
+@import 'footer.scss';
+
+body {
+    font-family: Montserrat;
+    font-size: 15px;
+    color: #07222f;
+}
+
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content {
+    flex: 1 1 auto;
+}
+.container {
+    max-width: 1190px;
+    padding: 0 8px;
+    margin: 0 auto;
+    @include lg {
+        max-width: 970px;
+    }
+    @include md {
+        max-width: 750px;
+    }
+    @include sm {
+        max-width: none;
+    }
+}
+
+.title {
+    font-size: 36px;
+    line-height: 66px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    text-align: center;
+    @include xsm {
+        line-height: 32px;
+    }
+}
+.description{
+    opacity: 0.6;
+    font-size: 18px;
+    line-height: 66px;
+    letter-spacing: 0.01em;
+    text-align: center;
+    @include xsm {
+        line-height: 28px;
+        opacity: 1;
+    }
+}
+
+.item__title {
+    font-size: 18px;
+    line-height: 66px;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    text-align: center;
+}
+.item__description {
+    opacity: 0.6;
+    line-height: 25px;
+    letter-spacing: 0.01em;
+    text-align: center;
+}
+
+.logo {
+    margin-right: 16px;
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    color: #ffffff;   
+}
+
+.menu a {
+    margin-right: 19px;
+    line-height: 40px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+.menu__list {
+    display: flex;
+    flex-wrap: wrap;
+}

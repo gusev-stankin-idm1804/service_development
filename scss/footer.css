@@ -1,0 +1,43 @@
+.footer {
+  min-height: 275px;
+  background: url("../img/shape_6_526.png") 0 0/100% 100% no-repeat;
+  background-size: cover;
+  color: #fff;
+}
+
+.footer_row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 175px;
+}
+
+.footer__logo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.footer__menu a {
+  color: #fff;
+}
+
+.footer__mail {
+  padding-left: 272px;
+  line-height: 40px;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.footer__mail::before {
+  content: '';
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: 10px;
+  width: 17px;
+  height: 13px;
+  background: url("../img/icons/envelope_522.png");
+}
+/*# sourceMappingURL=footer.css.map */
